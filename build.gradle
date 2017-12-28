@@ -1,9 +1,8 @@
 // 所有子项目的通用配置
+apply plugin: 'idea'
 subprojects {
     apply plugin: 'java'
-    // apply plugin: 'eclipse'
-    apply plugin: 'idea'
-
+    apply plugin: 'scala'
     version = '1.0'
 
     // JVM 版本号要求
@@ -16,7 +15,7 @@ subprojects {
     //定义版本号
     ext {
         scalaVersion = '2.12.4'
-        springBootVersion='1.5.9.RELEASE'
+        springBootVersion = '1.5.9.RELEASE'
     }
 
     repositories {
