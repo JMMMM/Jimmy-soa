@@ -19,6 +19,7 @@
     <orderEntry type="library" name="Gradle: org.scala-lang:scala-reflect:2.12.4" level="project" />
     <orderEntry type="library" name="Gradle: org.scala-lang.modules:scala-xml_2.12:1.0.6" level="project" />
     <orderEntry type="library" name="Gradle: org.scala-lang:scala-library:2.12.4" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-all:4.1.19.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.0.2.RELEASE" level="project" />

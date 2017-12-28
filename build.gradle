@@ -16,6 +16,7 @@ subprojects {
     ext {
         scalaVersion = '2.12.4'
         springVersion = '5.0.2.RELEASE'
+        nettyVersion = "4.1.19.Final"
     }
 
     repositories {
@@ -26,7 +27,7 @@ subprojects {
         compile 'org.scala-lang:scala-library:$scalaVersion'
         compile "org.scala-lang:scala-compiler:$scalaVersion"
         compile "org.scala-lang:scala-reflect:$scalaVersion"
-
+        compile "io.netty:netty-all:$nettyVersion"
         compile 'org.springframework:spring-context:5.0.2.RELEASE'
 
         testCompile 'junit:junit:4.12'
