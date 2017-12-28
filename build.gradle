@@ -16,6 +16,7 @@ subprojects {
     //定义版本号
     ext {
         scalaVersion = '2.12.4'
+        springBootVersion='1.5.9.RELEASE'
     }
 
     repositories {
@@ -26,6 +27,8 @@ subprojects {
         compile 'org.scala-lang:scala-library:$scalaVersion'
         compile "org.scala-lang:scala-compiler:$scalaVersion"
         compile "org.scala-lang:scala-reflect:$scalaVersion"
+
+        compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
 
         testCompile 'junit:junit:4.12'
 
