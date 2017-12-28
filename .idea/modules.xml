@@ -3,9 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Jimms-soa.iml" filepath="$PROJECT_DIR$/Jimms-soa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty/netty.iml" filepath="$PROJECT_DIR$/.idea/modules/netty/netty.iml" group="netty" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty/netty_main.iml" filepath="$PROJECT_DIR$/.idea/modules/netty/netty_main.iml" group="netty" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty/netty_test.iml" filepath="$PROJECT_DIR$/.idea/modules/netty/netty_test.iml" group="netty" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap.iml" group="Jimmy-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_main.iml" group="Jimmy-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_test.iml" group="Jimmy-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-container/Jimmy-container.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-container/Jimmy-container.iml" group="Jimmy-container" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-container/Jimmy-container_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-container/Jimmy-container_main.iml" group="Jimmy-container" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-container/Jimmy-container_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-container/Jimmy-container_test.iml" group="Jimmy-container" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty.iml" group="Jimmy-netty" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_main.iml" group="Jimmy-netty" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_test.iml" group="Jimmy-netty" />
     </modules>
   </component>
 </project>

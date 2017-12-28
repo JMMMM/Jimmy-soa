@@ -1,0 +1,6 @@
+// jar包的名字
+archivesBaseName = 'Jimmy-bootstrap'
+
+dependencies{
+    compile project(":Jimmy-container")
+}

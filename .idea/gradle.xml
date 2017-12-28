@@ -10,7 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/netty" />
+            <option value="$PROJECT_DIR$/Jimmy-bootstrap" />
+            <option value="$PROJECT_DIR$/Jimmy-container" />
+            <option value="$PROJECT_DIR$/Jimmy-netty" />
           </set>
         </option>
       </GradleProjectSettings>
