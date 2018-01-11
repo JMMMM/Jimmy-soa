@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringContainer implements Container {
-    private static final String SPRING_CONFIG_PATH = "META-INF/spring/services.xml";
+    private static final String SPRING_CONFIG_PATH = "/applicationContext.xml";
     public ClassPathXmlApplicationContext applicationContext = null;
 
     @Override
