@@ -17,7 +17,6 @@ import org.slf4j.LoggerFactory;
 
 
 public class NettyContainer implements Container {
-    private static final Logger LOGGER = LoggerFactory.getLogger(NettyContainer.class);
 
     private final EventLoopGroup bossGroup = new NioEventLoopGroup();
     private final EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -27,6 +26,7 @@ public class NettyContainer implements Container {
 
     @Override
     public void start() {
+        System.out.println("start NettyContainer ...");
         new Thread(() -> {
             try {
                 bootstrap = new ServerBootstrap();
@@ -55,6 +55,7 @@ public class NettyContainer implements Container {
 
     @Override
     public void stop() {
+        System.out.println("stop NettyContainer ...");
         bossGroup.shutdownGracefully();
         workerGroup.shutdownGracefully();
     }
