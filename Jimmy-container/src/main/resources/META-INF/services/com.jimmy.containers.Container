@@ -1,2 +1,3 @@
+com.jimmy.containers.logback.LogbackContainer
 com.jimmy.containers.spring.SpringContainer
 com.jimmy.containers.netty.NettyContainer
