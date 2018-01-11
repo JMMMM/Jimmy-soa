@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/Jimmy-bootstrap" />
             <option value="$PROJECT_DIR$/Jimmy-container" />
             <option value="$PROJECT_DIR$/Jimmy-netty" />
+            <option value="$PROJECT_DIR$/Jimmy-spring" />
           </set>
         </option>
       </GradleProjectSettings>

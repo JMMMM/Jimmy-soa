@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Jimms-soa.iml" filepath="$PROJECT_DIR$/Jimms-soa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap.iml" group="Jimmy-bootstrap" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_main.iml" group="Jimmy-bootstrap" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-bootstrap/Jimmy-bootstrap_test.iml" group="Jimmy-bootstrap" />
@@ -12,6 +11,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty.iml" group="Jimmy-netty" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_main.iml" group="Jimmy-netty" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-netty/Jimmy-netty_test.iml" group="Jimmy-netty" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-soa.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-soa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-spring/Jimmy-spring.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-spring/Jimmy-spring.iml" group="Jimmy-spring" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-spring/Jimmy-spring_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-spring/Jimmy-spring_main.iml" group="Jimmy-spring" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jimmy-spring/Jimmy-spring_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jimmy-spring/Jimmy-spring_test.iml" group="Jimmy-spring" />
     </modules>
   </component>
 </project>

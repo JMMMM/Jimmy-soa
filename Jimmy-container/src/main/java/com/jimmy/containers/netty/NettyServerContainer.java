@@ -38,6 +38,8 @@ public class NettyServerContainer implements Container {
                     .option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
                     .childOption(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT);
+
+            bootstrap.bind();
         }).start();
     }
 
