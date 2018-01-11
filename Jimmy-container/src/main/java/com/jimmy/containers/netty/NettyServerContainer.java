@@ -1,8 +1,11 @@
 package com.jimmy.containers.netty;
 
 import com.jimmy.containers.Container;
+import com.jimmy.containers.netty.handler.NettyServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
@@ -28,9 +31,13 @@ public class NettyServerContainer implements Container {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             IdleStateHandler handler = new IdleStateHandler(15, 0, 0);
-                            ch.pipeline().addLast(handler);
+                            ch.pipeline().addLast(handler, new NettyServerHandler());
                         }
-                    });
+                    })
+                    .option(ChannelOption.SO_BACKLOG, 1024)
+                    .option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)
+                    .childOption(ChannelOption.SO_KEEPALIVE, true)
+                    .childOption(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT);
         }).start();
     }
 
