@@ -17,3 +17,5 @@ include 'services:webservice'
 
 rootProject.name = 'Jimms-soa'
 include 'Jimmy-netty','Jimmy-bootstrap','Jimmy-container'
+include 'Jimmy-spring'
+
