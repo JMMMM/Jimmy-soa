@@ -43,6 +43,7 @@ public class NettyServerContainer implements Container {
 
     @Override
     public void stop() {
-
+        bossGroup.shutdownGracefully();
+        workerGroup.shutdownGracefully();
     }
 }
