@@ -8,7 +8,7 @@ import java.util.ServiceLoader;
 public class ContainerStartup {
 
     public static void startup() {
-        ContainerLoader.loadContainers().forEach(Container::start);
+        ContainerLoader.containers.forEach(Container::start);
     }
 
 }
