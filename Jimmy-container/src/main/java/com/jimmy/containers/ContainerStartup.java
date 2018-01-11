@@ -8,9 +8,7 @@ import java.util.ServiceLoader;
 public class ContainerStartup {
 
     public static void startup() {
-        //获取Container
-        ServiceLoader<Container> containersServiceLoader = ServiceLoader.load(Container.class, ContainerStartup.class.getClassLoader());
-        containersServiceLoader.forEach(Container::start);
+        ContainerLoader.loadContainers().forEach(Container::start);
     }
 
 }
