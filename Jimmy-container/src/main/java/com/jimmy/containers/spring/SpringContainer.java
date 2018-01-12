@@ -11,6 +11,7 @@ public class SpringContainer implements Container {
     @Override
     public void start() {
         applicationContext = new ClassPathXmlApplicationContext(SPRING_CONFIG_PATH);
+        applicationContext.getBeansWithAnnotation(null);
         applicationContext.start();
     }
 

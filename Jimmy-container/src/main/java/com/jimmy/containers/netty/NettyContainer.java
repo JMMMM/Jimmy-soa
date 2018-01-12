@@ -12,6 +12,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.logging.LogLevel;
+import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleStateHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +36,7 @@ public class NettyContainer implements Container {
 
                 bootstrap.group(bossGroup, workerGroup)
                         .channel(NioServerSocketChannel.class)
+                        .handler(new LoggingHandler(LogLevel.DEBUG))
                         .childHandler(new NettyServerChannelInitializer())
                         .option(ChannelOption.SO_BACKLOG, 1024)
                         .option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)
