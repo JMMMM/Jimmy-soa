@@ -1,8 +1,21 @@
 // 所有子项目的通用配置
 apply plugin: 'idea'
 subprojects {
+    buildscript {
+        repositories {
+            maven {
+                url "https://plugins.gradle.org/m2/"
+            }
+        }
+        dependencies {
+            classpath "gradle.plugin.com.google.protobuf:protobuf-gradle-plugin:0.8.3"
+        }
+    }
+
     apply plugin: 'java'
     apply plugin: 'scala'
+    apply plugin: "com.google.protobuf"
+
     version = '1.0'
 
     // JVM 版本号要求
@@ -36,6 +49,7 @@ subprojects {
         compile "ch.qos.logback:logback-classic:$logbackVersion"
         compile "ch.qos.logback:logback-core:$logbackVersion"
         compile "org.slf4j:slf4j-api:$slf4jVersion"
+        compile "com.google.protobuf:protobuf-java:2.6.1"
 
         testCompile 'junit:junit:4.12'
 

@@ -1,6 +1,7 @@
 package com.jimmy.containers.netty;
 
 import com.jimmy.containers.Container;
+import com.jimmy.containers.netty.handler.NettyServerChannelInitializer;
 import com.jimmy.containers.netty.handler.NettyServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
@@ -33,13 +34,7 @@ public class NettyContainer implements Container {
 
                 bootstrap.group(bossGroup, workerGroup)
                         .channel(NioServerSocketChannel.class)
-                        .childHandler(new ChannelInitializer<SocketChannel>() {
-                            @Override
-                            protected void initChannel(SocketChannel ch) throws Exception {
-                                IdleStateHandler handler = new IdleStateHandler(15, 0, 0);
-                                ch.pipeline().addLast(handler, new NettyServerHandler());
-                            }
-                        })
+                        .childHandler(new NettyServerChannelInitializer())
                         .option(ChannelOption.SO_BACKLOG, 1024)
                         .option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)
                         .childOption(ChannelOption.SO_KEEPALIVE, true)
