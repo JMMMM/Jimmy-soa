@@ -8,10 +8,17 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../Jimmy-netty/out/production/classes" />
     <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../Jimmy-netty/src/generated">
+      <sourceFolder url="file://$MODULE_DIR$/../../../Jimmy-netty/src/generated/main/domain" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../Jimmy-netty/src/generated/main/grpc" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../Jimmy-netty/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../../Jimmy-netty/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../Jimmy-netty/src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../Jimmy-netty/src/main/resources" type="java-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../Jimmy-netty/src/resources">
+      <sourceFolder url="file://$MODULE_DIR$/../../../Jimmy-netty/src/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -26,6 +33,7 @@
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.1.3" level="project" />
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.1.3" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.13" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.5.1" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.0.2.RELEASE" level="project" />

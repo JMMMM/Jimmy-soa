@@ -24,6 +24,18 @@ subprojects {
     // java编译的时候缺省状态下会因为中文字符而失败
     [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
 
+    sourceSets {
+        main {
+            java {
+                srcDirs 'src/generated/main/grpc'
+                srcDirs 'src/generated/main/domain'
+                srcDirs 'src/main/java'
+            }
+            resources {
+                srcDir 'src/resources'
+            }
+        }
+    }
     //定义版本号
     ext {
         scalaVersion = '2.12.4'
@@ -38,7 +50,7 @@ subprojects {
     }
 
     dependencies {
-        compile 'org.scala-lang:scala-library:$scalaVersion'
+        compile "org.scala-lang:scala-library:$scalaVersion"
         compile "org.scala-lang:scala-compiler:$scalaVersion"
         compile "org.scala-lang:scala-reflect:$scalaVersion"
         compile "io.netty:netty-all:$nettyVersion"
@@ -48,6 +60,7 @@ subprojects {
         compile "ch.qos.logback:logback-classic:$logbackVersion"
         compile "ch.qos.logback:logback-core:$logbackVersion"
         compile "org.slf4j:slf4j-api:$slf4jVersion"
+        compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.5.1'
 
         testCompile 'junit:junit:4.12'
 
